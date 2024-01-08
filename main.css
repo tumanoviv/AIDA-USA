@@ -1,0 +1,326 @@
+html {
+  height: auto;
+}
+
+:root {
+  --grey: #252525;
+  --light-milk: #fffcf2;
+  --light-green: #25ce51;
+  --nav: var(--grey);
+  --easing: cubic-bezier(0.5, 0.7, 0.4, 1);
+}
+
+.is-loading .main-wrapper {
+  visibility: hidden;
+}
+
+.loader-mask {
+  display: block;
+}
+
+.nav_btn-open::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #25ce51;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-101%);
+}
+.nav_btn-close::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #fffcf2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-101%);
+}
+.nav_btn-open:hover::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(0);
+}
+.nav_btn-close:hover::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(0);
+}
+.nav_btn-open.animate-out::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(100%);
+}
+.nav_btn-close.animate-out::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(100%);
+}
+
+.footer-link::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #b8b8b8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-101%);
+}
+
+.footer-link:hover::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(0);
+}
+
+.footer-link.animate-out::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(100%);
+}
+
+.footer-link::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #fffcf2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-101%);
+}
+
+.footer-link:hover::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(0);
+}
+
+.footer-link.animate-out::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(100%);
+}
+.link-big::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #b8b8b8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-101%);
+}
+
+.link-big:hover::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(0);
+}
+
+.link-big.animate-out::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(100%);
+}
+
+.link-big::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #25ce51;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-101%);
+}
+
+.footer-link:hover::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(0);
+}
+
+.footer-link.animate-out::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(100%);
+}
+
+.index-text_block {
+  animation: rotation 45s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.loader-up-text-wrap,
+.loader-center-content,
+.loader-down-content {
+  visibility: hidden;
+}
+
+.abaut_tab-sub {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s var(--easing);
+}
+
+.abaut_item-subtitle.activ .abaut_tab-sub {
+  max-height: 500px;
+}
+.client-image-wrap img {
+}
+
+.swiper-slide.swiper-slide-active .call-subtitle {
+  opacity: 1;
+}
+
+.swiper.is-call-item {
+  width: 100%;
+  max-width: 59rem;
+  max-height: 13rem;
+  margin: 0 auto;
+}
+
+.is-display.call-item-heading-1.is-active {
+  transition-delay: 0.3s;
+  will-change: transform;
+}
+.is-display.call-item-heading-2.is-active {
+  transition-delay: 0.6s;
+  will-change: transform;
+}
+
+.approach-tab-item.active .approach-item-content {
+  max-height: 500px;
+}
+
+.plusminus {
+  position: relative;
+  cursor: pointer;
+}
+.plusminus.active:before {
+  transform: translatey(-50%) rotate(-90deg);
+  opacity: 0;
+}
+.plusminus.active:after {
+  transform: translatey(-50%) rotate(0);
+}
+.plusminus:before,
+.plusminus:after {
+  content: "";
+  display: block;
+  background-color: #25ce51;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: 0.35s;
+  width: 90%;
+  height: 2px;
+}
+.plusminus:before {
+  transform: translatey(-50%);
+}
+.plusminus:after {
+  transform: translatey(-50%) rotate(90deg);
+}
+
+.work-card_title::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: var(--grey);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-101%);
+}
+
+.work-card_title.animate-in::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(0);
+}
+.work-card_title {
+  transition: transform 0.3s var(--easing);
+}
+
+.work-card_title.animate-out::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(100%);
+}
+
+/* Анимашки для драга */
+
+.link-tilte::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: var(--grey);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-101%);
+}
+
+.link-tilte.animate-in::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(0);
+}
+.link-tilte {
+  transition: transform 0.3s var(--easing);
+}
+
+.link-tilte.animate-out::after {
+  transition: transform 0.3s var(--easing);
+  transform: translateX(100%);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fffcf2 !important;
+  -webkit-box-shadow: 0 0 0px 40rem #252525 inset !important;
+}
+
+/* Скрываем медиа контент на abaut */
+
+.awards-media {
+  visibility: hidden;
+}
+
+/* Стили nav для открытого меню */
+
+/* Класс .active-menu */
+
+.nav.active-menu .logo-wrapper {
+  color: #fffcf2;
+}
+/* Стили nav для черного экрана */
+
+/* Класс для кнопок со стрелками  */
+
+.insights-back-wrapper:hover .back-icon {
+  transform: translate(-0.5rem, 0px);
+}
+
+.next-link:hover .next-link-arrow {
+  transform: translate(0.5rem, 0px);
+}
+.learn-more-btn:hover .lean-arrow {
+  transform: translate(0.5rem, 0px);
+}
+
+/* Инсайды */
+.insight-list:nth-child(1) {
+  border-top: 1px dotted #252525;
+}
+
+.insights-link {
+  text-decoration: underline transparent;
+
+  transition: text-decoration 300ms ease;
+}
+
+.isughts-item .is-h3 {
+  text-decoration: underline transparent;
+
+  transition: text-decoration 300ms ease;
+}
